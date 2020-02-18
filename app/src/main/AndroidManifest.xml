@@ -11,7 +11,6 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.SEND_SMS" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,7 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MapsActivity"></activity>
+        <activity android:name=".Click"></activity>
+        <activity android:name=".MapsActivity" />
         <activity android:name=".PrivacyPolicy" />
         <activity android:name=".Terms" />
         <activity android:name=".Contact" />
@@ -29,7 +29,10 @@
         <activity android:name=".Settings_Fragment" />
         <activity android:name=".EntriesFragment" />
         <activity android:name=".MainActivity1" />
-        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

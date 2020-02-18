@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,10 +7,29 @@
     tools:context=".EntriesFragment">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="entries"
-        android:textSize="50dp"
-        android:textColor="#1A1919"/>
+        android:textColor="#1A1919"
+        android:textSize="50dp" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:width="280dp"
+        android:height="1dp"
+        android:background="@drawable/rounded_button"
+        android:text="UPLOAD"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
