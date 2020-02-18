@@ -18,5 +18,7 @@ public class PrivacyPolicy extends AppCompatActivity {
         policy=(PDFView) findViewById(R.id.pdfpolicy);
 
         policy.fromAsset("PrivacyPolicy.pdf").load();
+
+        //Random comment
     }
 }
