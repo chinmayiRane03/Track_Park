@@ -18,7 +18,7 @@ public class EntriesFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.activity_settings__fragment, container, false);
+       View view = inflater.inflate(R.layout.activity_entries_fragment, container, false);
 
 
         Button button3 = (Button) view.findViewById(R.id.upload);

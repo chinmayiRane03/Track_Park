@@ -17,6 +17,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnPausedListener;
 import com.google.firebase.storage.OnProgressListener;
@@ -25,7 +26,7 @@ import com.google.firebase.storage.UploadTask;
 
 import java.util.Date;
 
-public class Asyncc extends AsyncTask<String, String, String> {
+   public class Asyncc extends AsyncTask<String, String, String> {
 
     Click uploadfunc;
     Context ctx;
@@ -38,6 +39,7 @@ public class Asyncc extends AsyncTask<String, String, String> {
 
     public Asyncc(Context ctx, Uri dataBaos,ProgressBar progressBar) {
         this.ctx=ctx;
+
 
         uploadfunc= new Click();
 
@@ -61,6 +63,7 @@ public class Asyncc extends AsyncTask<String, String, String> {
 
         FirebaseStorage storage;
         StorageReference storageRef;
+
         storage = FirebaseStorage.getInstance();
 
 
@@ -161,4 +164,3 @@ public class Asyncc extends AsyncTask<String, String, String> {
         //super.onProgressUpdate(values);
     }
 }
-

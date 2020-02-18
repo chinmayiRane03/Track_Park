@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -172,7 +171,7 @@ public class Click extends AppCompatActivity implements View.OnClickListener {
                     //  startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO);
 
 
-                    startActivityForResult(intent, CAMERA_REQUEST_CODE);
+                     startActivityForResult(intent, CAMERA_REQUEST_CODE);
 
                 }
 
